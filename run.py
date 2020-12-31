@@ -3,12 +3,12 @@ from telegram.ext import *
 import requests
 import json
 
-bot = Bot('1472276375:AAHnzbpHcKcSwAtEG7bLvASL6H_dYKCwgWo')
+bot = Bot('YOUR_BOT_TOKEN')
 updater = Updater('1472276375:AAHnzbpHcKcSwAtEG7bLvASL6H_dYKCwgWo',use_context=True)
 dispatcher : Dispatcher = updater.dispatcher
 
 def getWeatherData(city_name):
-    key = 'f0f5e3d87f6d51eaef4e8487f94c8bd5'
+    key = 'OpenWeatherAPI_KEY'
     URL = f'https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={key}&units=metric'
     response = requests.get(url = URL)
     payload = response.json()
