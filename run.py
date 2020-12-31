@@ -3,8 +3,9 @@ from telegram.ext import *
 import requests
 import json
 
-bot = Bot('YOUR_BOT_TOKEN')
-updater = Updater('1472276375:AAHnzbpHcKcSwAtEG7bLvASL6H_dYKCwgWo',use_context=True)
+token = 'YOUR_BOT_TOKEN'
+bot = Bot(token)
+updater = Updater(token,use_context=True)
 dispatcher : Dispatcher = updater.dispatcher
 
 def getWeatherData(city_name):
