@@ -1,6 +1,10 @@
 # Telegram Weather Webhook
 A simple weather webhook for Telegram bot using OpenWeatherAPI
 
-```pip install requests, json, python-telegram-bot```
+### Setup
 
-Run ```py run.py``` and test the bot [here](https://t.me/grbgebot)
+- ```pip install requests, json, python-telegram-bot```
+- Provide your Bot Token and OpenWeatherAPI.
+- Run ```py run.py```
+
+Test the bot [here](https://t.me/grbgebot)
