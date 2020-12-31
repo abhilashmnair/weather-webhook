@@ -4,7 +4,6 @@ import requests
 import json
 
 bot = Bot('1472276375:AAHnzbpHcKcSwAtEG7bLvASL6H_dYKCwgWo')
-print(bot.get_me())
 updater = Updater('1472276375:AAHnzbpHcKcSwAtEG7bLvASL6H_dYKCwgWo',use_context=True)
 dispatcher : Dispatcher = updater.dispatcher
 
