@@ -15,8 +15,6 @@ def getWeatherData(city_name):
     payload = response.json()
     try:
         cur_weather = payload['weather'][0]['main']
-        cur_desc = payload['weather'][0]['description']
-        weather_icon = payload['weather'][0]['icon']
         cur_temp = payload['main']['temp']
         return f'Weather in {city_name}\nCurrent weather : {cur_weather}\nTemperature : {cur_temp}°C'
     except KeyError:
